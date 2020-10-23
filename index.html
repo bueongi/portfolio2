@@ -27,6 +27,7 @@
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 		<!-- css -->
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="./css/m_main.css">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<!-- skip_menu -->
 		<link rel="stylesheet" href="./css/skip_menu.css">
@@ -48,7 +49,7 @@
 				<div class="inner">
 					<div class="img_box">
 						<a href="./index.html">
-							<img src="./images/M_banner01.jpg" alt="mainlogo">
+							<img src="./images/mainbanner01.jpg" alt="메인배너">
 						</a>
 					</div>
 					<h1>hello, Welocom to <strong>양주연 Portfolio</strong></h1>
@@ -56,7 +57,7 @@
 						격변하는 디지털 시대의<br>
 						현재에 안주 하지 않고 앞으로 나아가는 웹 퍼블리셔
 					</p>
-					<ul class="actions special">
+					<ul class="actions special" id="start_btn">
 						<li><a href="#one about" class="button scrolly">Start</a></li>
 					</ul>
 				</div>
@@ -72,7 +73,7 @@
 							<div id="close_menu">
 									<span><i id="close_btn" class="fa fa-times fa-2x" aria-hidden="true"></i></span>
 							</div>
-							<ul>
+							<ul class="fixed_nav">
 									<li><a href="#header">Home</a></li>
 									<li><a href="#one about">About</a></li>
 									<li><a href="#two skill">Skill</a></li>
@@ -135,23 +136,23 @@
 					<p>Ante nunc accumsan et aclacus nascetur ac ante amet sapien sed.</p>
 					<div class="row gtr-150">
 						<div class="col-4 col-12-medium">
-							<span class="image fit"><a href="#"><img src="./images/M_banner01.jpg" alt="" /></a></span>
-							<h3>Hansol</h3>
+							<span class="image fit"><a href="https://bueongi.github.io/WCBcafe/" target="blank_"><img src="./images/M_banner01.jpg" alt="" /></a></span>
+							<h3>WCBcafe</h3>
 							<p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.</p>
 							<ul class="actions special">
 								<li><a href="#" class="button">More</a></li>
 							</ul>
 						</div>
 						<div class="col-4 col-12-medium">
-							<span class="image fit"><a href="#"><img src="./images/M_banner01.jpg" alt="" /></a></span>
-							<h3>Hollys</h3>
+							<span class="image fit"><a href="https://bueongi.github.io/Indigo/" target="blank_"><img src="./images/M_banner01.jpg" alt="" /></a></span>
+							<h3>Indigo</h3>
 							<p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.</p>
 							<ul class="actions special">
 								<li><a href="#" class="button">More</a></li>
 							</ul>
 						</div>
 						<div class="col-4 col-12-medium">
-							<span class="image fit"><a href="#"><img src="./images/M_banner01.jpg" alt="" /></a></span>
+							<span class="image fit"><a href="#" target="blank_"><img src="./images/M_banner01.jpg" alt="" /></a></span>
 							<h3>Paik's</h3>
 							<p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.</p>
 							<ul class="actions special">
@@ -164,16 +165,19 @@
 
 		<!-- Four -->
 			<section id="four contact" class="main style2 special clearfix">
-				<div class="container">
-					<header class="major">
+				<div class="container" id="con_contact">
+					<header class="major" id="contact_tit_box">
 						<h2>contact</h2>
 					</header>
 					<p id="p_line">연락 기다리겠습니다.</p>
-					<ul class="icons">
+					<ul class="icons" id="icons">
 						<li><a href="https://www.instagram.com/albaricoque_1002" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
 						<li><a href="https://github.com/bueongi" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
 						<li><a href="https://mail.naver.com/" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
 					</ul>
+					<header class="major">
+						<h2></h2>
+					</header>
 	
 					<!-- <ul class="actions special">
 						<li><a href="#" class="button wide primary">Sign Up</a></li>
@@ -519,20 +523,41 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-    <!-- toggle nav -->
+    
     <script>
 			$(function(){
+				// ===toggle nav 호출
 					$('#tgl_menu').click(function(){
 							$('.main_nav').toggleClass('active');
 							$(this).toggleClass('active');
+							$('html,body').addClass('.not_scroll');
 					});
 					$('#close_btn').click(function(){
 							$('.main_nav').removeClass('active');
+							$('html,body').removeClass('.not_scroll');
 					});
 					document.addEventListener('scroll',function(){
 							var scrTop = document.documentElement.scrollTop;
 					});
 					$('header').addClass('active');
+					
+					// 윈도우 스크롤
+					$(window).on('scroll',function(){
+						var scrTop = $(window).scrollTop();
+						var hrd = $('.header');
+						if(scrTop>0){
+							hrd.addClass('active');
+						}else{
+							hrd.removeClass('active');
+						}
+					});
+
+					
+					// if('body.style.width'=='max-width: 980px'){
+					// 	$('.main_nav').removeClass('active');
+					// }else{
+					// 	$('.main_nav').addClass('active');
+					// }
 			});
 	</script>
 
