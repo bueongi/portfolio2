@@ -65,7 +65,7 @@ input::-moz-focus-inner {
 	padding: 0;
 }
 
-input, select, textarea {
+input{
 	-moz-appearance: none;
 	-webkit-appearance: none;
 	-ms-appearance: none;
@@ -97,7 +97,7 @@ input, select, textarea {
 		transition: none !important;
 	}
 
-	body, input, select, textarea {
+	body, input{
 		color: #666;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 16pt;
@@ -276,16 +276,17 @@ input, select, textarea {
 			width: 100%;
 		}
 
-		@media screen and (min-width: 980px) {
+		@media screen and (max-width: 980px) {
 
 			.container {
 				min-width: 100% !important;
 				width: 100% !important;
 			}
 
+
 		}
 
-		@media screen and (min-width: 480px) {
+		@media screen and (max-width: 480px) {
 
 			.container {
 				min-width: calc(100% - 3em);
@@ -536,7 +537,7 @@ input, select, textarea {
 		padding-top: 4em;
 	}
 
-	@media screen and (max-width: 1680px){
+	@media screen and (max-width: 1920px){
 		.row {
 			display: flex;
 			flex-wrap: wrap;
@@ -2056,169 +2057,7 @@ input, select, textarea {
 		text-align: center;
 	}
 
-/* Form */
 
-	form {
-		margin: 0 0 2em 0;
-	}
-
-	label {
-		color: #555;
-		display: block;
-		font-size: 0.9em;
-		font-weight: 400;
-		margin: 0 0 1em 0;
-	}
-
-	input[type="text"],
-	input[type="password"],
-	input[type="email"],
-	select,
-	textarea {
-		-moz-appearance: none;
-		-webkit-appearance: none;
-		-ms-appearance: none;
-		appearance: none;
-		background: rgba(144, 144, 144, 0.075);
-		border-radius: 4px;
-		border: none;
-		border: solid 1px rgba(144, 144, 144, 0.5);
-		color: inherit;
-		display: block;
-		outline: 0;
-		padding: 0 1em;
-		text-decoration: none;
-		width: 100%;
-	}
-
-		input[type="text"]:invalid,
-		input[type="password"]:invalid,
-		input[type="email"]:invalid,
-		select:invalid,
-		textarea:invalid {
-			box-shadow: none;
-		}
-
-		input[type="text"]:focus,
-		input[type="password"]:focus,
-		input[type="email"]:focus,
-		select:focus,
-		textarea:focus {
-			border-color: #6bd4c8;
-		}
-
-	select {
-		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'%3E%3Cpath d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='rgba(144, 144, 144, 0.5)' /%3E%3C/svg%3E");
-		background-size: 1.25rem;
-		background-repeat: no-repeat;
-		background-position: calc(100% - 1rem) center;
-		height: 2.75em;
-		padding-right: 2.75em;
-		text-overflow: ellipsis;
-	}
-
-	select option {
-		color: #555;
-		background: #fff;
-	}
-
-	select:focus::-ms-value {
-		background-color: transparent;
-	}
-
-	select::-ms-expand {
-		display: none;
-	}
-
-	input[type="text"],
-	input[type="password"],
-	input[type="email"],
-	select {
-		height: 2.75em;
-	}
-
-	textarea {
-		padding: 0.75em 1em;
-	}
-
-	input[type="checkbox"],
-	input[type="radio"] {
-		-moz-appearance: none;
-		-webkit-appearance: none;
-		-ms-appearance: none;
-		appearance: none;
-		display: block;
-		float: left;
-		margin-right: -2em;
-		opacity: 0;
-		width: 1em;
-		z-index: -1;
-	}
-
-		input[type="checkbox"] + label,
-		input[type="radio"] + label {
-			text-decoration: none;
-			color: #666;
-			cursor: pointer;
-			display: inline-block;
-			font-size: 1em;
-			font-weight: 300;
-			padding-left: 2.4em;
-			padding-right: 0.75em;
-			position: relative;
-		}
-
-			input[type="checkbox"] + label:before,
-			input[type="radio"] + label:before {
-				-moz-osx-font-smoothing: grayscale;
-				-webkit-font-smoothing: antialiased;
-				display: inline-block;
-				font-style: normal;
-				font-variant: normal;
-				text-rendering: auto;
-				line-height: 1;
-				text-transform: none !important;
-				font-family: 'Font Awesome 5 Free';
-				font-weight: 900;
-			}
-
-			input[type="checkbox"] + label:before,
-			input[type="radio"] + label:before {
-				background: rgba(144, 144, 144, 0.075);
-				border-radius: 4px;
-				border: solid 1px rgba(144, 144, 144, 0.5);
-				content: '';
-				display: inline-block;
-				font-size: 0.8em;
-				height: 2.0625em;
-				left: 0;
-				line-height: 2.0625em;
-				position: absolute;
-				text-align: center;
-				top: 0;
-				width: 2.0625em;
-			}
-
-		input[type="checkbox"]:checked + label:before,
-		input[type="radio"]:checked + label:before {
-			background: #666666;
-			border-color: #666666;
-			color: #ffffff;
-			content: '\f00c';
-		}
-
-		input[type="checkbox"]:focus + label:before,
-		input[type="radio"]:focus + label:before {
-			border-color: #6bd4c8;
-		}
-
-	input[type="checkbox"] + label:before {
-		border-radius: 4px;
-	}
-
-	input[type="radio"] + label:before {
-		border-radius: 100%;
-	}
 
 	::-webkit-input-placeholder {
 		color: #999 !important;
@@ -2820,12 +2659,13 @@ input, select, textarea {
 		.main.style1 {
 			background: #fff;
 		}
+		.main.style1>.container{padding:50px 0;}
 
 		.main.style2 {
 			background-color: #333;
 			color: rgba(255, 255, 255, 0.75);
-			background-attachment: fixed,							fixed;
-			background-image: url("images/overlay1.png"), url("../../images/header.jpg");
+			background-attachment: fixed,fixed;
+			background-image: url("images/overlay1.png"),url("../../images/header.jpg");
 			background-size: auto, cover;
 		}
 		.main.style2>.container{
@@ -2833,17 +2673,7 @@ input, select, textarea {
 			position:relative;
 			padding-left:14%;
 		}
-		.main.style2 #p_line::after{
-			content:'';
-			display:block;
-			width:2px;
-			height:180px;
-			background:#fff;
-			text-indent:-999999px;
-			position:absolute;
-			left:50%;
-			top:0%
-		}
+		
 
 		.main.style2 a {
 			border-bottom-color: rgba(255, 255, 255, 0.5);
@@ -2931,10 +2761,10 @@ input, select, textarea {
 		padding: 9em 0 9em 0 ;
 		background-color: #4686a0;
 		color: rgba(255, 255, 255, 0.75);
-		background-attachment: fixed,							fixed,							fixed;
-		background-image: url("images/overlay2.png"), url("images/overlay3.svg"), linear-gradient(45deg, #9dc66b 5%, #4fa49a 30%, #4361c2);
-		background-position: top left,						center center,					center center;
-		background-size: auto,							cover,							cover;
+		background-attachment: fixed,	fixed, fixed;
+		/* background-image: url("images/overlay2.png"),url("images/overlay3.svg") , linear-gradient(45deg, #9dc66b 5%, #4fa49a 30%, #4361c2); */
+		background-position: top left, center center,	center center;
+		background-size: auto,	cover,	cover;
 		overflow: hidden;
 		position: relative;
 		text-align: center;
@@ -2943,18 +2773,17 @@ input, select, textarea {
 		#header a {
 			border-bottom-color: rgba(255, 255, 255, 0.5);
 		}
-
-			#header a:hover {
-				color: #ffffff;
-			}
+		#header a:hover {
+			color: #ffffff;
+		}
 
 		#header h1, #header h2, #header h3, #header h4, #header h5, #header h6, #header strong, #header b {
 			color: #ffffff;
 		}
 
-		#header header p {
+		/* #header header p {
 			color: #ffffff;
-		}
+		} */
 
 		#header header.major:after {
 			background: #ffffff;
@@ -3026,6 +2855,7 @@ input, select, textarea {
 
 		#header p {
 			margin: 1em 0 0 0;
+			color:#fff;
 		}
 
 		#header .actions {
@@ -3045,22 +2875,12 @@ input, select, textarea {
 			#header .actions:after {
 				background: #ffffff;
 				content: '';
-				height: 100vh;
+				height: 80vh;
 				left: 50%;
 				position: absolute;
 				top: 100%;
 				width: 1px;
 			}
-
-		#header .img_box>a{
-			border:none;
-		}
-
-		#header .img_box img{
-			width:380px;
-			border-radius:10px;
-			margin-bottom:0;
-		}
 
 		#header .inner {
 			-moz-transition: -moz-transform 1.5s ease, opacity 2s ease;
@@ -3131,61 +2951,17 @@ input, select, textarea {
 		opacity: 1;
 	}
 
-			/* hambuger */
-			#header02{
-				width:100%;
-				height:10vh;
-				position:fixed;
-				left:0;
-				top:0;
-				z-index:1000;
-				background:transparent;
-				overflow:hidden;
-			}
-			#header02.active{height:64px;}
-			#header02>.container{margin-left:50px;}
-			#header02>.container>.row{margin:0;}
-			#header02 .ham_buger{
-					float:right;
-					cursor:pointer;
-					margin-top:25px;
-					padding:0;
-					color:#fff;
-			}
-			#tgl_menu{transition:.3s;}
-			#tgl_menu.active{transform:rotate(180deg);}
 	
-			.main_nav{
-				width:0;
-				height:93vh;
-				overflow:hidden;
-				background:rgba(0,0,0,.2);
-				position:fixed;
-				left:0;
-				bottom:-25px;
-				transition:.3s;
-			}
-			.main_nav.active{
-					width:13.5vw;
-			}
-			.main_nav li{
-					margin-bottom:20px;
-					font-size:2rem;
-			}
-			.main_nav li:first-child{margin-top:20px;}
-			.main_nav li>a{color:#fff;}
-	
-			#close_menu>span{color:#fff;}
 	
 
 /* Footer */
 
 	#footer {
 		padding: 6em 0 6em 0 ;
-		background-color: #4686a0;
+		/* background-color: #4686a0; */
 		color: rgba(255, 255, 255, 0.75);
 		background-attachment: fixed,		fixed,	fixed;
-		background-image: url("images/overlay2.png"), url("images/overlay4.svg"), linear-gradient(45deg, #4361c2, #4fa49a 50%, #9dc66b 95%);
+		/* background-image: url("images/overlay2.png"), url("images/overlay4.svg"), linear-gradient(45deg, #4361c2, #4fa49a 50%, #9dc66b 95%); */
 		background-position: top left,	center center,	center center;
 		background-size: auto,	cover,	cover;
 		text-align: center;
@@ -3298,11 +3074,11 @@ input, select, textarea {
 
 /* XLarge */
 
-	@media screen and (min-width: 1680px) {
+	@media screen and (max-width: 1920px) {
 
 		/* Basic */
 
-			body, input, select, textarea {
+			body, input{
 				font-size: 14pt;
 			}
 
@@ -3311,16 +3087,18 @@ input, select, textarea {
 			#header {
 				padding: 6em 0 6em 0 ;
 			}
+			#header>.inner{margin-top:90px;}
+			
 			
 	}
 
 /* Large */
 
-	@media screen and (min-width: 1140px) {
+	@media screen and (max-width: 1140px) {
 
 		/* Basic */
 
-			body, input, select, textarea {
+			body, input{
 				font-size: 13pt;
 			}
 
@@ -3373,7 +3151,7 @@ input, select, textarea {
 
 /* Medium */
 
-	@media screen and (min-width: 980px) {
+	@media screen and (max-width: 980px) {
 
 		/* List */
 
@@ -3398,11 +3176,6 @@ input, select, textarea {
 			#header {
 				padding: 8em 3em 8em 3em ;
 			}
-			#header02{display:none;}
-
-		/* section */
-		.main.style2>.container{
-		}
 
 		/* Footer */
 
@@ -3426,11 +3199,11 @@ input, select, textarea {
 
 /* Small */
 
-	@media screen and (min-width: 736px) {
+	@media screen and (max-width: 736px) {
 
 		/* Basic */
 
-			body, input, select, textarea {
+			body, input{
 				font-size: 12pt;
 			}
 
@@ -3498,6 +3271,7 @@ input, select, textarea {
 			#header .actions {
 				margin: 2em 0 0 0;
 			}
+
 			
 
 
@@ -3511,7 +3285,7 @@ input, select, textarea {
 
 /* XSmall */
 
-	@media screen and (min-width: 480px) {
+	@media screen and (max-width: 480px) {
 
 		/* Button */
 
@@ -3538,10 +3312,10 @@ input, select, textarea {
 			#header br {
 				display: none;
 			}
-			#header .img_box img{
-				width:300px;
-				margin:20px;
-			}
+			
+
+			
+			
 	
 
 		/* section */
@@ -3575,12 +3349,12 @@ input, select, textarea {
 
 /* XXSmall */
 
-	@media screen and (min-width: 320px) {
+	@media screen and (max-width: 320px) {
 
 		/* Basic */
 
-			html, body {
-				min-width: 480px;
+			html, body, .container {
+				max-width: 480px;
 			}
 
 		/* Main */
@@ -3594,34 +3368,9 @@ input, select, textarea {
 			#header {
 				padding: 3em 1em 3em 1em ;
 			}
-			#header02>.container{margin-left:20px;}
-			#header02 .ham_buger{
-					margin-top:15px;
-			}
-			.main_nav{
-				width:0;
-				height:93vh;
-				overflow:hidden;
-				background:rgba(0,0,0,.2);
-				position:fixed;
-				left:0;
-				bottom:-25px;
-				transition:.3s;
-			}
-			.main_nav.active{
-					width:100vw;
-			}
-			.main_nav li{
-					margin-bottom:20px;
-					font-size:2rem;
-			}
-			.main_nav li:first-child{margin-top:20px;}
-			.main_nav li>a{color:#fff;}
-	
-			#close_menu>span{color:#fff;}
 
 
-		/* ssection */
+		/* section */
 
 
 		/* Footer */

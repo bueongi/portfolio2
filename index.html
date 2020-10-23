@@ -47,12 +47,7 @@
 		<!-- Header -->
 			<header id="header">
 				<div class="inner">
-					<div class="img_box">
-						<a href="./index.html">
-							<img src="./images/mainbanner01.jpg" alt="메인배너">
-						</a>
-					</div>
-					<h1>hello, Welocom to <strong>양주연 Portfolio</strong></h1>
+					<h1><a href="./index.html">hello, Welocom to <strong>양주연 Portfolio</strong></a></h1>
 					<p>
 						격변하는 디지털 시대의<br>
 						현재에 안주 하지 않고 앞으로 나아가는 웹 퍼블리셔
@@ -544,7 +539,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 					// 윈도우 스크롤
 					$(window).on('scroll',function(){
 						var scrTop = $(window).scrollTop();
-						var hrd = $('.header');
+						var hrd = $('#header02');
 						if(scrTop>0){
 							hrd.addClass('active');
 						}else{
