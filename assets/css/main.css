@@ -2137,29 +2137,6 @@ input{
 			font-family: 'Font Awesome 5 Brands';
 		}
 
-		.icon.style1:before {
-			color: #c3e895;
-		}
-
-		.icon.style2:before {
-			color: #8addaa;
-		}
-
-		.icon.style3:before {
-			color: #6bd4c8;
-		}
-
-		.icon.style4:before {
-			color: #57aed3;
-		}
-
-		.icon.style5:before {
-			color: #4a87d3;
-		}
-
-		.icon.style6:before {
-			color: #6b88e6;
-		}
 
 		.icon.major {
 			text-decoration: none;
@@ -2759,7 +2736,7 @@ input{
 
 	#header {
 		padding: 9em 0 9em 0 ;
-		background-color: #4686a0;
+		/* background-color: #4686a0; */
 		color: rgba(255, 255, 255, 0.75);
 		background-attachment: fixed,	fixed, fixed;
 		/* background-image: url("images/overlay2.png"),url("images/overlay3.svg") , linear-gradient(45deg, #9dc66b 5%, #4fa49a 30%, #4361c2); */
@@ -2921,7 +2898,7 @@ input{
 			-webkit-transition: opacity 1s ease;
 			-ms-transition: opacity 1s ease;
 			transition: opacity 1s ease;
-			background-image: linear-gradient(45deg, #4fa49a, #4361c2);
+			/* background-image: linear-gradient(45deg, #4fa49a, #4361c2); */
 			content: '';
 			height: 100%;
 			left: 0;
@@ -2987,8 +2964,6 @@ input{
 			background: #ffffff;
 		}
 
-		#footer input[type="submit"],
-		#footer input[type="reset"],
 		#footer input[type="button"],
 		#footer button,
 		#footer .button {
@@ -2996,24 +2971,18 @@ input{
 			color: #ffffff !important;
 		}
 
-			#footer input[type="submit"]:hover,
-			#footer input[type="reset"]:hover,
 			#footer input[type="button"]:hover,
 			#footer button:hover,
 			#footer .button:hover {
 				background-color: rgba(255, 255, 255, 0.125);
 			}
 
-			#footer input[type="submit"]:active,
-			#footer input[type="reset"]:active,
 			#footer input[type="button"]:active,
 			#footer button:active,
 			#footer .button:active {
 				background-color: rgba(255, 255, 255, 0.25);
 			}
 
-			#footer input[type="submit"].primary,
-			#footer input[type="reset"].primary,
 			#footer input[type="button"].primary,
 			#footer button.primary,
 			#footer .button.primary {
@@ -3022,8 +2991,6 @@ input{
 				color: #4686a0 !important;
 			}
 
-				#footer input[type="submit"].primary:hover,
-				#footer input[type="reset"].primary:hover,
 				#footer input[type="button"].primary:hover,
 				#footer button.primary:hover,
 				#footer .button.primary:hover {
@@ -3031,8 +2998,6 @@ input{
 					color: #ffffff !important;
 				}
 
-				#footer input[type="submit"].primary:active,
-				#footer input[type="reset"].primary:active,
 				#footer input[type="button"].primary:active,
 				#footer button.primary:active,
 				#footer .button.primary:active {

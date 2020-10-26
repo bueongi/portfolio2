@@ -10,13 +10,19 @@ html,body{height:100%;box-sizing:border-box;}
 }
 #header>.inner{
   margin-top:0;
+  font-size:2rem;
 }
 #header h1{padding-top:50px;}
+#header a:hover {color: #111;}
 #header a,#header h1 strong{
   border-bottom-color:transparent;
-  font-family: cursive;
+  /* font-family: cursive; */
+  font-family:'Brush Script MT';
+  font-weight:900;
   color:#111;
 }
+
+#header p{line-height:2.6rem;}
 
 #header #start_btn{margin-top:2em;}
 
@@ -37,7 +43,7 @@ html,body{height:100%;box-sizing:border-box;}
   #header02>.container>.row{height:100%;margin:0;overflow:hidden;}
   #header02 .ham_buger{
     position:fixed;
-    right:30px;
+    right:24px;
     top:0;
     cursor:pointer;
     margin-top:30px;
@@ -69,16 +75,22 @@ html,body{height:100%;box-sizing:border-box;}
   .main_nav li>a{color:#fff;transition:.3s;}
   .main_nav li>a:hover{color:#4fa49a;}
 
-  #close_menu{margin:20px 0 0 20px;}
-  #close_menu>span{color:#fff;}
+  .main_nav>#close_menu{margin:20px 0 0 20px;color:#fff;cursor:pointer;}
+  
 
   /* section */
   #one>.container{
 
   }
-  #con_contact{padding:0;}
+  .image.fit>img{border-radius:20px;}
+    /* section 4 */
+  #con_contact {
+    padding:0 0 0 2em;
+  }
   #contact_tit_box{width:120px;}
+  #con_contact #underbar{margin-bottom:2em;}
   .main.style2 header.major:after{margin-top:0;}
+  .main.style2 #p_line{margin-bottom:1em;}
   .main.style2 #p_line::after{
     content:'';
     display:block;
@@ -88,9 +100,10 @@ html,body{height:100%;box-sizing:border-box;}
     text-indent:-999999px;
     position:absolute;
     left:50%;
-    top:10%;
+    top:13%;
   }
-  .main.style2 #icons{margin-bottom:1em;}
+  .main.style2 #icons{margin-bottom:0.5em;}
+  
 
   #footer{
     background-image: url('../../images/mainbanner01.jpg');
@@ -100,20 +113,28 @@ html,body{height:100%;box-sizing:border-box;}
   /* XLarge */
 
 	@media screen and (min-width: 1140px){
+    body,html{max-width:1920px;}
+    #header>.inner{margin-top:0;}
+    #header h1{padding-top:165px;}
+
+
     #header02 .ham_buger{
       display:none;
     }
     /* === main_nav === */
     .main_nav{
-      width:68%;
-      height:100px;
+      width:0;
+      height:100vh;
+      background:transparent;
+      overflow:hidden;
       position:fixed;
       right:0;
-      top:-18px;
-      margin:0;
-      background:transparent;
+      top:0;
+      transition:.3s;
     }
-    .main_nav>ul{padding-left:0;}
+    .main_nav>ul{
+      padding-left:0;
+    }
     .main_nav li{
       margin-right:30px;
       margin-bottom:0;
@@ -124,31 +145,36 @@ html,body{height:100%;box-sizing:border-box;}
     .main_nav li:first-child{margin-top:30px;}
     .main_nav li:last-child{margin-right:0;}
     .main_nav li>a{color:#fff;border-bottom:none;}
+    .main_nav>#close_menu{display:none;}
 
-    #close_menu>span{display:none;}
-        
+    /* section 4 */
+    #con_contact {
+      padding: 0em 0 0em 11em;
+      font-size:1.4em;
+    }
   }
 
 
   /* Large  === 햄버거 없이 메인내비만 나오게*/
 
 	@media screen and (max-width: 1140px){
-    body{font-size: 14pt;}
-    #header{background:url('../images/mainbanner01.jpg') no-repeat center;background-size:cover;}
-
+    #header h1{padding-top:190px;}
     #header02 .ham_buger{
       display:none;
     }
     .main_nav{
-      width:68%;
-      height:100px;
+      width:0;
+      height:100vh;
+      background:transparent;
+      overflow:hidden;
       position:fixed;
       right:0;
-      top:-18px;
-      margin:0;
-      background:transparent;
+      top:0;
+      transition:.3s;
     }
-    .main_nav>ul{padding-left:0;}
+    .main_nav>ul{
+      padding-left:0;
+    }
     .main_nav li{
       margin-right:30px;
       margin-bottom:0;
@@ -160,8 +186,13 @@ html,body{height:100%;box-sizing:border-box;}
     .main_nav li:last-child{margin-right:0;}
     .main_nav li>a{color:#fff;border-bottom:none;}
 
-    #close_menu>span{display:none;}
+    .main_nav>#close_menu{display:none;}
     
+    /* section 4 */
+    #con_contact {
+      padding: 0 0 0 10em;
+      font-size:1.3em;
+    }
   }
 
 
@@ -172,6 +203,9 @@ html,body{height:100%;box-sizing:border-box;}
   /* Medium   여기까지는 햄버거 존재*/
 
 	@media screen and (max-width: 980px){
+    #header h1{padding-top:100px;line-height:1em;}
+
+
     			/* ham_buger */
 			#header02 .ham_buger{
 				display:block;
@@ -185,7 +219,7 @@ html,body{height:100%;box-sizing:border-box;}
         background:rgba(0,0,0,.8);
         position:fixed;
         right:0;
-        top:0px;
+        top:0;
         transition:.3s;
       }
       .main_nav.active{
@@ -197,33 +231,86 @@ html,body{height:100%;box-sizing:border-box;}
         font-size:2rem;
       }
   
-      #close_menu{margin:0;}
-      #close_menu>span{color:#fff;}
+      .main_nav>#close_menu{margin:20px 0 0 20px;color:#fff;}
+      
+
+    
 
 
 		/* section */
 		.main.style2>.container{
-		}
+    }
+    /* section 4 */
+    #con_contact {
+      padding: 0 0 0 7em;
+    }
 
   }
   
 /* === 모바일 ===== */
   /* Small */ 
   @media screen and (max-width: 736px){
-    #header{
-      padding: 8em 3em 8em 3em;
+    #header{padding: 8em 3em 8em 3em;}
+    #header>.inner{font-size:2.5rem;}
+    #header h1{line-height:1em;}
+    #header p{font-size:2rem;margin-top:50px;}
+    #header #start_btn .button {
+      height: 3em;
+      line-height: 3em;
+      padding:0 11rem;
     }
+    
+    input[type="button"], button, .button{
+      height:3.6em;
+      padding:0 12rem;
+      line-height:3.5em;
+    }
+
   }
 
   /* XSmall */
 
 	@media screen and (max-width: 480px){
-    body,html{min-width:480px;}
+    #header>.inner{font-size:2.1rem;}
+    #header h1{line-height:1em;}
+    #header p{font-size:2rem;}
+    #header #start_btn{margin-top:55px;margin-left:0.1rem;}
+    #header #start_btn .button {
+      height: 3em;
+      line-height: 3em;
+      padding:0;
+    }
+    
+    input[type="button"], button, .button{
+      height:3.6em;
+      padding:0 12rem;
+      line-height:3.5em;
+    }
+
+    /* section 4 */
+    #con_contact {
+      margin-left:0;
+      padding: 0 0 0 2em;
+    }
+    
+
   }
 
   /* XXSmall */
 
 	@media screen and (max-width: 320px){
+    body,html{min-width:480px;}
+    #header #start_btn{margin-top:55px;margin-left:0.1rem;}
+    #header #start_btn .button {
+      height: 3em;
+      line-height: 3em;
+      padding:0;
+    }
     
+    input[type="button"], button, .button{
+      height:3.6em;
+      padding:0 12rem;
+      line-height:3.5em;
+    }
 
   }
