@@ -1,0 +1,314 @@
+@charset 'utf-8';
+
+html,body{height:100%;box-sizing:border-box;}
+.not_scroll{width:100%;overflow:hidden;}
+
+#header{
+  height:940px;
+  background-image: url('../../images/mainbanner01.jpg');
+  /* url("images/overlay2.png") */
+}
+#header>.inner{
+  margin-top:0;
+  font-size:2rem;
+}
+#header h1{padding-top:50px;}
+#header a:hover {color: #111;}
+#header a,#header h1 strong{
+  border-bottom-color:transparent;
+  /* font-family: cursive; */
+  font-family:'Brush Script MT';
+  font-weight:900;
+  color:#111;
+}
+
+#header p{line-height:2.6rem;}
+
+#header #start_btn{margin-top:2em;}
+
+    /* hambuger */
+  #header02{
+    width:100%;
+    height:20vh;
+    position:fixed;
+    left:0;
+    top:0;
+    z-index:1000;
+    background:transparent;
+    overflow:hidden;
+    z-index:2;
+  }
+  #header02.active{height:100px;background:rgba(0,0,0,.5);}
+  #header02>.container{height:100%;margin-left:50px;}
+  #header02>.container>.row{height:100%;margin:0;overflow:hidden;}
+  #header02 .ham_buger{
+    position:fixed;
+    right:24px;
+    top:0;
+    cursor:pointer;
+    margin-top:20px;
+    padding:0;
+    color:#fff;
+  }
+  #tgl_menu{transition:.3s;}
+  #tgl_menu.active{transform:rotate(180deg);}
+
+  .main_nav{
+    width:0;
+    height:100vh;
+    overflow:hidden;
+    background:rgba(0,0,0,.8);
+    position:fixed;
+    right:0;
+    top:0;
+    transition:.3s;
+  }
+  .main_nav.active{
+    width:40vw;
+  }
+  .main_nav>ul{padding:30px 15px;}
+  .main_nav li{
+    margin-bottom:50px;
+    font-size:2rem;
+  }
+  /* .main_nav li:first-child{margin-top:10px;} */
+  .main_nav li>a{color:#fff;transition:.3s;}
+  .main_nav li>a:hover{color:#4fa49a;}
+  .main_nav>#close_menu{margin:10px 0 0 10px;color:#fff;cursor:pointer;}
+  
+
+  /* section */
+  #one>.container{
+
+  }
+  .image.fit>img{border-radius:20px;}
+    /* section 4 */
+  #con_contact {
+    padding:0 0 0 2em;
+  }
+  #contact_tit_box{width:120px;}
+  #con_contact #underbar{margin-bottom:2em;}
+  .main.style2 header.major:after{margin-top:0;}
+  .main.style2 #p_line{margin-bottom:1em;}
+  .main.style2 #p_line::after{
+    content:'';
+    display:block;
+    width:2px;
+    height:82%;
+    background:#fff;
+    text-indent:-999999px;
+    position:absolute;
+    left:50%;
+    top:13%;
+  }
+  .main.style2 #icons{margin-bottom:0.5em;}
+  
+
+  #footer{
+    background-image: url('../../images/mainbanner01.jpg');
+  }
+  
+
+  /* XLarge */
+
+	@media screen and (min-width: 1141px){
+    /* body,html{max-width:1920px;} */
+    #header>.inner{margin-top:0;}
+    #header h1{padding-top:165px;}
+
+
+    #header02 .ham_buger{
+      display:none;
+    }
+    /* === main_nav === */
+    .main_nav{
+      width:80%;
+      height:100px;
+      margin:0 auto;
+      background:transparent;
+      overflow:hidden;
+      position:fixed;
+      right:0;
+      top:-30px;
+      transition:.3s;
+    }
+    .main_nav>ul{
+      padding-left:0;
+    }
+    .main_nav li{
+      margin-right:30px;
+      margin-bottom:0;
+      font-weight:500;
+      font-size:2rem;
+      display:inline-block;
+    }
+    .main_nav li:first-child{margin-top:30px;}
+    .main_nav li:last-child{margin-right:0;}
+    .main_nav li>a{color:#fff;border-bottom:none;}
+    .main_nav>#close_menu{display:none;}
+
+    /* section 4 */
+    #con_contact {
+      padding: 0em 0 0em 11em;
+      font-size:1.3em;
+    }
+  }
+
+
+  /* Large  === 햄버거 없이 메인내비만 나오게*/
+
+	@media screen and (max-width: 1140px){
+    #header h1{padding-top:190px;}
+    #header02 .ham_buger{
+      display:none;
+    }
+    .main_nav{
+      width:80%;
+      height:100px;
+      margin:0 auto;
+      background:transparent;
+      overflow:hidden;
+      position:fixed;
+      right:0;
+      top:0;
+      transition:.3s;
+    }
+    
+    .main_nav li{
+      margin-right:30px;
+      margin-bottom:0;
+      font-weight:500;
+      font-size:2rem;
+      display:inline-block;
+    }
+    .main_nav li:first-child{margin-top:30px;}
+    .main_nav li:last-child{margin-right:0;}
+    .main_nav li>a{color:#fff;border-bottom:none;}
+
+    
+    
+    /* section 4 */
+    #con_contact {
+      padding: 0 0 0 10em;
+      font-size:1.3em;
+    }
+  }
+
+  @media screen and (min-width: 981px) and (max-width:1139px){
+    #close_menu{display:none;}
+  }
+
+
+
+/* ===== 태블릿 =====*/
+  /* Medium   여기까지는 햄버거 존재*/
+
+	@media screen and (max-width: 980px){
+    #header h1{padding-top:100px;line-height:1em;}
+    			/* ham_buger */
+			#header02 .ham_buger{
+				display:block;
+      }
+      /* === main_nav === */
+      .main_nav{
+        width:0;
+        height:100vh;
+        margin:0;
+        overflow:hidden;
+        background:rgba(0,0,0,.8);
+        position:fixed;
+        right:0;
+        top:0;
+        transition:.3s;
+      }
+      .main_nav.active{
+        width:40vw;
+      }
+      .main_nav li{
+        /* margin-bottom:50px; */
+        font-size:2rem;
+      }
+  
+      .main_nav>#close_menu>#close_btn{margin:0 0 0 20px;color:#fff;}
+      
+
+    
+
+
+		/* section */
+		.main.style2>.container{
+    }
+        /* section 4 */
+    #con_contact {
+      padding: 0 0 0 7em;
+    }
+
+  }
+  
+/* === 모바일 ===== */
+  /* Small */ 
+  @media screen and (max-width: 736px){
+    #header{padding: 8em 3em 8em 3em;}
+    #header>.inner{font-size:2.5rem;}
+    #header h1{line-height:1em;}
+    #header p{font-size:2rem;margin-top:50px;}
+    #header #start_btn .button {
+      height: 3em;
+      line-height: 3em;
+      padding:0 11rem;
+    }
+    
+    input[type="button"], button, .button{
+      height:3.6em;
+      padding:0 12rem;
+      line-height:3.5em;
+    }
+
+  }
+
+  /* XSmall */
+
+	@media screen and (max-width: 480px){
+    #header>.inner{font-size:2.1rem;}
+    #header h1{line-height:1em;}
+    #header p{font-size:2rem;}
+    #header #start_btn{margin-top:55px;margin-left:0.1rem;}
+    #header #start_btn .button {
+      height: 3em;
+      line-height: 3em;
+      padding:0;
+    }
+    
+    input[type="button"], button, .button{
+      height:3.6em;
+      padding:0 12rem;
+      line-height:3.5em;
+    }
+
+    /* section 4 */
+    #con_contact {
+      margin-left:0;
+      padding: 0 0 0 2em;
+    }
+    
+
+  }
+
+  /* XXSmall */
+
+	@media screen and (max-width: 320px){
+    body,html{min-width:480px;}
+    #header #start_btn{margin-top:55px;margin-left:0.1rem;}
+    #header #start_btn .button {
+      height: 3em;
+      line-height: 3em;
+      padding:0;
+    }
+    
+    input[type="button"], button, .button{
+      height:3.6em;
+      padding:0 12rem;
+      line-height:3.5em;
+    }
+
+  }

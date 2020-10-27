@@ -1,0 +1,19 @@
+@charset 'utf-8';
+
+/* 웹접근성 관련 */
+  .skip_menu>a{
+    display:inline-block;
+    border:2px solid #000;
+    border-radius:5px;
+    padding:5px 10px;
+    font-size:20px;
+    background:#999;
+    color:#fff;
+    position:fixed;
+    left:0;
+    top:0;
+    opacity:0;
+    text-decoration:none;
+    z-index:1000;
+  }
+  .skip_menu>a:focus{opacity:1;}
