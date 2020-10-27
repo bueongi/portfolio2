@@ -68,12 +68,12 @@
 							<div id="close_menu">
 								<i id="close_btn" class="fa fa-times fa-3x" aria-hidden="true"></i>
 							</div>
-							<ul class="fixed_nav">
-									<li><a href="#header">Home</a></li>
-									<li><a href="#one about">About</a></li>
-									<li><a href="#two skill">Skill</a></li>
-									<li><a href="#three portfolio">portfolio</a></li>
-									<li><a href="#four contact">contact</a></li>
+							<ul>
+								<li><a href="#header">Home</a></li>
+								<li><a href="#one about">About</a></li>
+								<li><a href="#two skill">Skill</a></li>
+								<li><a href="#three portfolio">portfolio</a></li>
+								<li><a href="#four contact">contact</a></li>
 							</ul>
 					</nav>
 				</div>
@@ -90,8 +90,8 @@
 							<p>Adipiscing a commodo ante nunc accumsan et interdum mi ante adipiscing. A nunc lobortis non nisl amet vis sed volutpat aclacus nascetur ac non. Lorem curae et ante amet sapien sed tempus adipiscing id accumsan.</p>
 						</div>
 						<div class="col-6 col-12-medium imp-medium">
-							<span class="image fit">
-								<img src="images/pic01.jpg" alt="about이미지">
+							<span class="image fit" id="ab_img_box">
+								<img src="images/mainbanner01.jpg" alt="about이미지">
 							</span>
 						</div>
 					</div>
@@ -175,18 +175,13 @@
 					<header class="major" id="underbar">
 						<h2></h2>
 					</header>
-	
-					<!-- <ul class="actions special">
-						<li><a href="#" class="button wide primary">Sign Up</a></li>
-						<li><a href="#" class="button wide">Learn More</a></li>
-					</ul> -->
 				</div>
 			</section>
 
 		<!-- Footer -->
 			<footer id="footer">
 				<ul class="copyright">
-					<li>COPYRIGHT&copy; YJY PORTFPLIOCo.</li><li>Design: <a href="./index.html">HTML5 UP</a></li>
+					<li>COPYRIGHT&copy; YJY PORTFPLIOCo.</li><li>Design: <a href="./index.html">yjy go</a></li>
 				</ul>
 			</footer>
 
@@ -208,6 +203,7 @@
 					});
 					$('#close_btn').click(function(){
 							$('.main_nav').removeClass('active');
+							$(this).toggleClass('active');
 							$('html,body').removeClass('.not_scroll');
 					});
 					document.addEventListener('scroll',function(){
