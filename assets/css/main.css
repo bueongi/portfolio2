@@ -1,6 +1,6 @@
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic");
-
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
 /*
 	Photon by HTML5 UP
 	html5up.net | @ajlkn
@@ -537,7 +537,7 @@ input{
 		padding-top: 4em;
 	}
 
-	@media screen and (max-width: 1920px){
+	@media screen and (min-width: 1140px){
 		.row {
 			display: flex;
 			flex-wrap: wrap;
@@ -3034,7 +3034,7 @@ input{
 
 /* XLarge */
 
-	@media screen and (max-width: 1920px) {
+	@media screen and (min-width: 1140px) {
 
 		/* Basic */
 
