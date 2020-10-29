@@ -91,13 +91,15 @@ html,body{height:100%;}
   }
 
   /* section */
-    /* section 1 */
-  .main.style1>.container{padding:15px 0;}
-  .main.style1 .major h2{margin-top:30px;}
+    /* section 1  about*/
+  #one.main.style1{padding:4em 0 0 0;}
+  #one.main.style1 .major h2{margin-top:30px;}
+  .main.style1 .col-6.col-12-medium{padding:0 0 0 8em;}
+  .main.style1 .col-6.col-12-medium.imp-medium{padding:0;}
   #ab_img_box img{border-radius:20px;width:50%;margin:0 auto;}
   .about_txt{margin-right:20px;}
 
-    /* section 2 */
+    /* section 2 skill */
   /* .main.style2{background-image:url('./images/overlay1.png'),url('../../images/sec02.jpg');} */
   .main.style2 .container{}
   #two#skill.main.style2 .row.gtr-150{width:100%;display:flex;flex-flow:column wrap;}
@@ -105,14 +107,19 @@ html,body{height:100%;}
   .main.style2 .col-6.col-12-medium:first-child{width:100%;height:100px;text-align:center;margin-left:-90px;}
   .main.style2 .col-6.col-12-medium:last-child{
     width:100%;
-    padding-left:0 auto;
     display:flex;
     flex-flow:row nowrap;
     justify-content:space-between;
 		list-style: none;
   }
-  .main.style2 .score_bar{background:#fff;font-weight:100;position:relative;text-indent:-999999999px;}
-  .main.style2 .score_bar::after{content:'';display:block;width:8em;height:8px;background:#666;position:absolute;left:0;top:0;}
+  .main.style2 .score_bar{border:4px solid #fff;position:relative;text-indent:-999999999px;}
+  .main.style2 .score_bar::after{content:'';display:block;height:8px;background:dodgerblue;position:absolute;left:-4px;top:-4px;}
+  .score_bar.photo::after{width:73%;}
+  .score_bar.illu::after{width:76%;}
+  .score_bar.html::after{width:90%;}
+  .score_bar.css::after{width:85%;}
+  .score_bar.js::after{width:65%;}
+  .score_bar.jquery::after{width:70%;}
 
   ul.major-icons {
 		list-style: none;
@@ -158,8 +165,8 @@ html,body{height:100%;}
 
     /* section 4 */
   .main.style2 .container#con_contact {
-    padding: 0em 0 0em 7em;
-    font-size:1.3em;
+    padding: 0em 0 0em 2em;
+    font-size:1.2em;
   }
   #contact_tit_box{width:120px;}
   .container#con_contact #underbar{margin-bottom:2em;}
@@ -266,6 +273,12 @@ html,body{height:100%;}
     .main_nav #close_menu{display:none;}
 
     #header h1{padding:148px 50px 0;}
+
+     /* section */
+       /* section 2 skill */
+    ul.major-icons li{
+      padding:2.7em;
+    }
   }
 
 
@@ -323,9 +336,9 @@ html,body{height:100%;}
       padding:2em 10rem;
     }
       /* section 4 */
-    #con_contact {
+    .main.style2 #con_contact {
       padding: 0 0 0 2em;
-      font-size:1.3em;
+      font-size:1.2em;
     }
     
 

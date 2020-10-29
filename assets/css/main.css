@@ -781,7 +781,7 @@ input{
 
 	}
 
-	@media screen and (max-width: 1140px) {
+	@media screen and (min-width: 981px) and (max-width: 1140px) {
 
 		.row {
 			display: flex;
@@ -1273,7 +1273,7 @@ input{
 
 		.row {
 			display: flex;
-			flex-wrap: wrap;
+			flex-wrap: nowrap;
 			box-sizing: border-box;
 			align-items: stretch;
 		}
@@ -3054,7 +3054,7 @@ input{
 
 /* Large */
 
-	@media screen and (max-width: 1140px) {
+	@media screen and (min-width: 981px) and (max-width: 1140px) {
 
 		/* Basic */
 
