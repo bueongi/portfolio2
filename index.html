@@ -61,12 +61,12 @@
 				<div class="container">
 					<div class="row clearfix">
 							<div class="ham_buger">
-								<i id="tgl_menu" class="fa fa-bars fa-3x" aria-hidden="true"></i>
+								<i id="tgl_menu" class="fa fa-bars fa-2x" aria-hidden="true"></i>
 							</div>  
 					</div>
 					<nav class="main_nav">
 							<div id="close_menu">
-								<i id="close_btn" class="fa fa-times fa-3x" aria-hidden="true"></i>
+								<i id="close_btn" class="fa fa-times fa-2x" aria-hidden="true"></i>
 							</div>
 							<ul>
 								<li><a href="#header">Home</a></li>
@@ -251,12 +251,12 @@
 					$('#tgl_menu').click(function(){
 							$('.main_nav').toggleClass('active');
 							$(this).toggleClass('active');
-							$('html,body').addClass('.not_scroll');
+							// $('html,body').addClass('.not_scroll');
 					});
 					$('#close_btn').click(function(){
 							$('.main_nav').removeClass('active');
 							$(this).toggleClass('active');
-							$('html,body').removeClass('.not_scroll');
+							// $('html,body').removeClass('.not_scroll');
 					});
 					document.addEventListener('scroll',function(){
 							var scrTop = document.documentElement.scrollTop;
