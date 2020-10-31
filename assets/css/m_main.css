@@ -26,7 +26,7 @@ html,body{height:100%;}
   height: 2em;
   border-radius:20px;
   line-height: 2.1em;
-  padding:0 5rem 0 6rem;
+  padding:0 6rem;
   color:#555!important;
 }
 
@@ -97,36 +97,28 @@ html,body{height:100%;}
   #one.main.style1 .major h2{margin-top:30px;}
   .main.style1 .col-6.col-12-medium{padding:0 0 0 8em;}
   .main.style1 .col-6.col-12-medium.imp-medium{padding:0;}
-  #ab_img_box img{border-radius:20px;width:50%;margin:0 auto;}
+  #ab_img_box img{width:50%;margin:0 auto;}
   .about_txt{margin-right:20px;}
 
     /* section 2 skill */
-  /* .main.style2{background-image:url('./images/overlay1.png'),url('../../images/sec02.jpg');} */
-  .main.style2 .container{}
-  #two#skill.main.style2 .row.gtr-150{width:100%;display:flex;flex-flow:column wrap;}
-  .main.style2 .col-6.col-12-medium{padding:0;}
-  .main.style2 .col-6.col-12-medium:first-child{width:100%;height:100px;text-align:center;margin-left:-90px;}
+  .main.style2{background-image:url('./images/overlay1.png'),url('../../images/sec03.jpg');background-position:top center;}
+  .main.style2{padding:4em 0 3em 0;}
+  .main.style2 .container{padding-left:3%;}
+  #two#skill.main.style2 .row.gtr-150{width:100%;display:flex;flex-flow:column wrap;align-items:center;}
+  .main.style2 .col-6.col-12-medium:first-child{width:100%;height:100px;text-align:center;padding-left:0;}
   .main.style2 .col-6.col-12-medium:last-child{
     width:100%;
     display:flex;
     flex-flow:row wrap;
-    justify-content:space-between;
-    align-items:center;
+    justify-content:center;
 		list-style: none;
   }
-  .main.style2 .score_bar{border:4px solid #fff;position:relative;text-indent:-999999999px;}
-  .main.style2 .score_bar::after{content:'';display:block;height:8px;background:dodgerblue;position:absolute;left:-4px;top:-4px;}
-  .score_bar.photo::after{width:73%;}
-  .score_bar.illu::after{width:76%;}
-  .score_bar.html::after{width:90%;}
-  .score_bar.css::after{width:85%;}
-  .score_bar.js::after{width:65%;}
-  .score_bar.jquery::after{width:70%;}
 
   ul.major-icons {
     width:750px;
 		list-style: none;
     text-align:center;
+    margin-left:-2.7em;
 	}
   ul.major-icons li {
     display: inline-block;
@@ -155,6 +147,17 @@ html,body{height:100%;}
     transform: rotate(0deg);
     line-height: inherit;
   }
+
+  .main.style2 .score_bar{margin:0;border:4px solid #fff;position:relative;text-indent:-999999999px;}
+  .main.style2 .score_bar::after{content:'';display:block;height:8px;background:dodgerblue;position:absolute;left:-4px;top:-4px;}
+  .score_bar.photo::after{width:73%;}
+  .score_bar.illu::after{width:76%;}
+  .score_bar.html::after{width:90%;}
+  .score_bar.css::after{width:85%;}
+  .score_bar.js::after{width:65%;}
+  .score_bar.jquery::after{width:70%;}
+
+
     /* section 3 */
   input[type="button"], button, .button {
     border-radius: 8px;
@@ -162,54 +165,39 @@ html,body{height:100%;}
     font-weight: 400;
     height: 2.75em;
     letter-spacing: 0.125em;
-    line-height:.2em;
+    line-height:0em;
     padding:24px 30px;
   }
 
-    /* section 4 */
-  .main.style2.special{padding:1em 0 1em 0;}
-  .main.style2.special .container#con_contact {
-    padding-top:1.2em;
-    font-size:1em;
-  }
-  #contact_tit_box{width:120px;}
-  .container#con_contact #underbar{margin-bottom:2em;}
-  .main.style2 header.major:after{margin-top:0;}
-  .main.style2.special #p_line{}
-  .main.style2.special #p_line::after{
-    content:'';
-    display:block;
-    width:2px;
-    height:82%;
-    background:#fff;
-    text-indent:-999999px;
-    position:absolute;
-    left:50%;
-    top:13%;
-  }
-  .main.style2 #icons{margin-bottom:0.5em;}
-
-  
-
   #footer{
     background-image: url('../../images/mainbanner01.jpg');
-    padding: 3em 1.5em;
+    padding:1em;
     color:#000f;
   }
+  #footer .containe{}
+  #footer .major h2{color:#000;}
+  #footer header.major:after {
+		content: '';
+    display: inline-block;
+    width: 6em;
+		height: 1px;
+    margin-top:0;
+    background: #000;
+  }
+  #footer p{font-size:1.2em;}
+  #footer .icons{}
   #footer .copyright {
-    font-size: 0.8em;
+    font-size: 1em;
     list-style: none;
-    margin: 2em 0 0 0;
+    margin: 2em 0;
     padding: 0;
   }
 
-    #footer .copyright li {
-      border-left: solid 1px;
-      display: inline-block;
-      line-height: 1em;
-      margin-left: 1em;
-      padding: 0 0 0 1em;
-    }
+  #footer .copyright li {
+    display: inline-block;
+    line-height: 1em;
+    padding:0 1em;
+  }
 
   
 
@@ -222,20 +210,21 @@ html,body{height:100%;}
     }
     /* === main_nav === */
     .main_nav{
-      width:1200px;
-      height:120px;
+      width:800px;
+      height:100px;
       background:transparent;
       overflow:hidden;
       position:fixed;
-      right:0;
-      top:-15px;
+      right:3%;
+      top:1%;
       transition:0s;
     }
     .main_nav>ul {
+      width:100%;
       display: flex;
       flex-flow:row nowrap;
       justify-content:space-around;
-      margin: 1.3em 0 0 23em;
+      margin:0;
     }
     .main_nav li{
       border-bottom:none;
@@ -254,23 +243,23 @@ html,body{height:100%;}
       display:none;
     }
     .main_nav{
-      width:1100px;
-      height:120px;
+      width:800px;
+      height:100px;
       background:transparent;
       overflow:hidden;
       position:fixed;
-      right:0;
-      top:-17px;
+      right:3%;
+      top:1%;
       transition:unset;
     }
     .main_nav>ul {
+      width:100%;
       display: flex;
       flex-flow:row nowrap;
       justify-content: space-around;
-      margin: 1.45em 0 0 20.5em;
+      margin:0;
     }
     .main_nav li{
-      margin-right:1.7em;
       border-bottom:none;
       font-weight:500;
       font-size:2rem;
@@ -282,14 +271,12 @@ html,body{height:100%;}
      /* section */
 
       /* section 2 skill */
-    .main.style2 .col-6.col-12-medium:first-child{padding-left:7em;}
-    .main.style2 .col-6.col-12-medium:last-child{padding-left:0;}
-    ul.major-icons li{padding:2.7em;}
-
+    .main.style2 .container{padding-left:4%;}
       /* section 4 */
-    .main.style2 #con_contact {
-      padding: 0 0 0 5em;
+    .main.style2.special .container#con_contact {
+      padding-left:5em;
     }
+    
   }
 
 
@@ -338,22 +325,24 @@ html,body{height:100%;}
       }
 
       /* section 1 */
+    .main.style1 .col-6.col-12-medium{padding:0 0 0 6em;}
     #ab_img_box img{padding-left:3em;}
       /* section 2 */
-    ul.major-icons li{padding:1em;}
+    .main.style2 .container{padding-left:8%;}
+    ul.major-icons li{padding:2em}
     ul.major-icons li .icon{width:7em;height:7em;}
-    .main.style2 .col-6.col-12-medium:first-child{padding-left:7em;}
-    .main.style2 .col-6.col-12-medium:last-child{padding-top:2rem;padding-right:1.2em;}
       /* section 3*/
     input[type="button"], button, .button {
       line-height:0;
       padding:2em 10rem;
     }
       /* section 4 */
-    .main.style2.special .container#con_contact {
-      font-size:.6em;
-    }
+      .main.style2.special .container#con_contact {
+        padding:1.2em 0 0 7em;
+        font-size:.8em;
+      }
 
+      #footer .copyright{font-size:.8em;}
     
 
   }
@@ -370,40 +359,32 @@ html,body{height:100%;}
 
     #header p{margin-top:50px;}
 
-      /* section 1 */
+      /* section 1 about*/
+    .main.style1 .col-6.col-12-medium{padding:0 0 0 5em;}
     #ab_img_box img{padding-left:3em;}
-      /* section 2 */
-    ul.major-icons li{padding:2em;}
-    ul.major-icons li .icon{width:8em;height:8em;}
-    .main.style2 .col-6.col-12-medium:first-child{padding-left:7em;}
-    .main.style2 .col-6.col-12-medium:last-child{padding-top:2rem;padding-right:1.2em;}
-    
-      /* section 3*/
+      /* section 2 skill*/
+    .main.style2 .container{padding-left:7%;}
+
+      /* section 3 portfolio*/
     input[type="button"], button, .button{
       padding:2em 12.7rem;
     }
-      /* section 4 */
-    .main.style2.special .container#con_contact{
-      font-size:1em;
-    }
+      /* section 4 contact*/
+      .main.style2.special .container#con_contact {
+        padding:1.2em 0 0 3.5em;
+        font-size:1em;
+      }
     .main.style2.special #p_line::after{margin-left:1em;}
   }
 
   /* XSmall */
 
 	@media screen and (max-width: 480px){
-    #header #start_btn .button {
-      padding:0 8rem;
-    }
-      /* section 2 */
-    .main.style2 .col-6.col-12-medium{padding:0 .5rem 0 0;}
-    /* section 1 */
+    .main.style2 .container{padding-left:10%;}
   }
 
   /* XXSmall */
 
 	@media screen and (max-width: 320px){
-    body,html{min-width:480px;}
-    #header #start_btn{margin-top:55px;margin-left:0.1rem;}
   }
   

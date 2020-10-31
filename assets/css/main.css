@@ -2656,9 +2656,9 @@ input{
 			border-bottom-color: rgba(255, 255, 255, 0.5);
 		}
 
-			.main.style2 a:hover {
+			/* .main.style2 a:hover {
 				color: #ffffff;
-			}
+			} */
 
 		.main.style2 h1, .main.style2 h2, .main.style2 h3, .main.style2 h4, .main.style2 h5, .main.style2 h6, .main.style2 strong, .main.style2 b {
 			color: #ffffff;
@@ -2740,7 +2740,7 @@ input{
 		color: rgba(255, 255, 255, 0.75);
 		background-attachment: fixed,	fixed, fixed;
 		/* background-image: url("images/overlay2.png"),url("images/overlay3.svg") , linear-gradient(45deg, #9dc66b 5%, #4fa49a 30%, #4361c2); */
-		background-position: top left, center center,	center center;
+		background-position: top left, center center, center center;
 		background-size: auto,	cover,	cover;
 		overflow: hidden;
 		position: relative;
@@ -3024,10 +3024,8 @@ input{
 		}
 
 			#footer .copyright li {
-				border-left: solid 1px;
 				display: inline-block;
 				line-height: 1em;
-				margin-left: 1em;
 				padding: 0 0 0 1em;
 			}
 
