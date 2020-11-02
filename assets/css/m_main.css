@@ -2,6 +2,7 @@
 
 html,body{height:100%;}
 .not_scroll{width:100%;overflow:hidden;}
+a{border-bottom:none;}
 
 #header{
   height:945px;
@@ -25,8 +26,9 @@ html,body{height:100%;}
 #header #start_btn .button {
   height: 2em;
   border-radius:20px;
-  line-height: 2.1em;
-  padding:0 6rem;
+  font-size:2rem;
+  line-height:0em;
+  padding:1.5em 6rem;
   color:#555!important;
 }
 
@@ -174,8 +176,8 @@ html,body{height:100%;}
     padding:1em;
     color:#000f;
   }
-  #footer .containe{}
-  #footer .major h2{color:#000;}
+  #footer .container{}
+  #footer .major h2{color:#000;text-align:center;}
   #footer header.major:after {
 		content: '';
     display: inline-block;
@@ -184,12 +186,13 @@ html,body{height:100%;}
     margin-top:0;
     background: #000;
   }
-  #footer p{font-size:1.2em;}
-  #footer .icons{}
+  #footer .icons a:hover {
+    color: #ffffff;
+  }
   #footer .copyright {
     font-size: 1em;
     list-style: none;
-    margin: 2em 0;
+    margin: 1em 0 .8em 0;
     padding: 0;
   }
 
@@ -231,7 +234,6 @@ html,body{height:100%;}
       font-weight:500;
       font-size:2rem;
     }
-    .main_nav li>a{border-bottom:none;}
     .main_nav #close_menu{display:none;}
   }
 
@@ -272,10 +274,6 @@ html,body{height:100%;}
 
       /* section 2 skill */
     .main.style2 .container{padding-left:4%;}
-      /* section 4 */
-    .main.style2.special .container#con_contact {
-      padding-left:5em;
-    }
     
   }
 
@@ -284,6 +282,7 @@ html,body{height:100%;}
   /* Medium   여기까지는 햄버거 존재 ==*/
 
 	@media screen and (max-width: 980px){
+    body,html{font-size:13pt;}
     			/* ham_buger */
 			#header02 .ham_buger{
 				display:block;
@@ -318,11 +317,7 @@ html,body{height:100%;}
       .main_nav #close_menu{margin:20px;color:#fff;}
 
       #header h1{padding-top:30px;font-size:1.5em;line-height:1em;}
-      #header p{line-height:1.5em;}
-      #header #start_btn .button {
-        padding:0 6rem;
-        font-size:3rem;
-      }
+      #header p{font-size:.8em;line-height:1.5em;}
 
       /* section 1 */
     .main.style1 .col-6.col-12-medium{padding:0 0 0 6em;}
@@ -331,18 +326,13 @@ html,body{height:100%;}
     .main.style2 .container{padding-left:8%;}
     ul.major-icons li{padding:2em}
     ul.major-icons li .icon{width:7em;height:7em;}
-      /* section 3*/
+      /* section 3 portfolio*/
     input[type="button"], button, .button {
       line-height:0;
-      padding:2em 10rem;
+      padding:2em 12em;
     }
-      /* section 4 */
-      .main.style2.special .container#con_contact {
-        padding:1.2em 0 0 7em;
-        font-size:.8em;
-      }
 
-      #footer .copyright{font-size:.8em;}
+    #footer .copyright{font-size:.8em;}
     
 
   }
@@ -364,27 +354,15 @@ html,body{height:100%;}
     #ab_img_box img{padding-left:3em;}
       /* section 2 skill*/
     .main.style2 .container{padding-left:7%;}
-
-      /* section 3 portfolio*/
-    input[type="button"], button, .button{
-      padding:2em 12.7rem;
-    }
-      /* section 4 contact*/
-      .main.style2.special .container#con_contact {
-        padding:1.2em 0 0 3.5em;
-        font-size:1em;
-      }
-    .main.style2.special #p_line::after{margin-left:1em;}
   }
 
   /* XSmall */
-
 	@media screen and (max-width: 480px){
+      /* section 2 skill*/
     .main.style2 .container{padding-left:10%;}
   }
 
   /* XXSmall */
-
 	@media screen and (max-width: 320px){
   }
   
