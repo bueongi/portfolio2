@@ -32,7 +32,6 @@
 	<!-- skip_menu -->
 	<link rel="stylesheet" href="assets/css/skip_menu.css">
 	
-
 	</head>
 
 	<body class="is-preload">
@@ -169,7 +168,7 @@
 							</ul>
 						</div>
 						<div class="col-4 col-12-medium">
-							<span class="image fit"><a href="https://bueongi.github.io/Indigo/"><img src="./images/M_banner01.jpg" alt="" /></a></span>
+							<span class="image fit"><a href="https://bueongi.github.io/Indigo/"><img src="./images/indigo.jpg" alt="인디고"></a></span>
 							<h3>Indigo</h3>
 							<p>반응형</p>
 							<ul class="actions special">
@@ -177,7 +176,7 @@
 							</ul>
 						</div>
 						<div class="col-4 col-12-medium">
-							<span class="image fit"><a href="https://bueongi.github.io/MEGAbox/pc.html"><img src="./images/M_banner01.jpg" alt="" /></a></span>
+							<span class="image fit"><a href="https://bueongi.github.io/MEGAbox/pc.html"><img src="./images/M_banner01.jpg" alt=""></a></span>
 							<h3>MEGABOX</h3>
 							<p>반응형(모바일/pc 따로 제작)</p>
 							<ul class="actions special">
@@ -185,29 +184,30 @@
 							</ul>
 						</div>
 						<div class="col-4 col-12-medium">
-							<span class="image fit"><a href="https://bueongi.github.io/paiks/"><img src="./images/M_banner01.jpg" alt="" /></a></span>
-							<h3>Paik's</h3>
-							<p>모바일형</p>
-							<ul class="actions special">
-								<li><a href="https://bueongi.github.io/paiks/" class="button">More</a></li>
-							</ul>
-						</div>
-						<div class="col-4 col-12-medium">
-							<span class="image fit"><a href="https://bueongi.github.io/Hansolepaper/"><img src="./images/M_banner01.jpg" alt="" /></a></span>
-							<h3>Hansole</h3>
+							<span class="image fit"><a href="https://bueongi.github.io/Hansolepaper/"><img src="./images/hansolepaper.jpg" alt="한솔페이퍼"></a></span>
+							<h3>Hansolepaper</h3>
 							<p>pc형</p>
 							<ul class="actions special">
 								<li><a href="https://bueongi.github.io/Hansolepaper/" class="button">More</a></li>
 							</ul>
 						</div>
 						<div class="col-4 col-12-medium">
-							<span class="image fit"><a href="https://bueongi.github.io/Hollys/"><img src="./images/M_banner01.jpg" alt="" /></a></span>
+							<span class="image fit"><a href="https://bueongi.github.io/Hollys/"><img src="./images/M_banner01.jpg" alt=""></a></span>
 							<h3>Hollys</h3>
 							<p>pc형</p>
 							<ul class="actions special">
 								<li><a href="https://bueongi.github.io/Hollys/" class="button">More</a></li>
 							</ul>
 						</div>
+						<div class="col-4 col-12-medium">
+							<span class="image fit"><a href="https://bueongi.github.io/paiks/"><img src="./images/paiks.jpg" alt="빽다방"></a></span>
+							<h3>Paik's</h3>
+							<p>모바일형</p>
+							<ul class="actions special">
+								<li><a href="https://bueongi.github.io/paiks/" class="button">More</a></li>
+							</ul>
+						</div>
+
 					</div>
 				</div>
 			</section>
@@ -239,37 +239,6 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-    
-    <script>
-			$(function(){
-				// ===toggle nav 호출
-					$('#tgl_menu').click(function(){
-							$('.main_nav').toggleClass('active');
-							$(this).toggleClass('active');
-							// $('html,body').addClass('.not_scroll');
-					});
-					$('#close_btn').click(function(){
-							$('.main_nav').removeClass('active');
-							$(this).toggleClass('active');
-							// $('html,body').removeClass('.not_scroll');
-					});
-					document.addEventListener('scroll',function(){
-							var scrTop = document.documentElement.scrollTop;
-					});
-					$('header').addClass('active');
-					
-					// 윈도우 스크롤
-					$(window).on('scroll',function(){
-						var scrTop = $(window).scrollTop();
-						var hrd = $('#header02');
-						if(scrTop>0){
-							hrd.addClass('active');
-						}else{
-							hrd.removeClass('active');
-						}
-					});
-			});
-	</script>
-
+      <script src="assets/js/m_main.js"></script>
 	</body>
 </html>
