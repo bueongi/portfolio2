@@ -95,7 +95,7 @@ a{border-bottom:none;}
 
   /* section */
     /* section 1  about*/
-  #one.main.style1{padding:4em 0 0 0;}
+  #one.main.style1{padding:4em 0;}
   #one.main.style1 .major h2{margin-top:30px;}
   .main.style1 .col-6.col-12-medium{padding:0 0 0 8em;}
   .main.style1 .col-6.col-12-medium.imp-medium{padding:0;}
@@ -106,7 +106,7 @@ a{border-bottom:none;}
   .main.style2{background-image:url('./images/overlay1.png'),url('../../images/sec03.jpg');background-position:top center;}
   .main.style2{padding:4em 0 3em 0;}
   .main.style2 .container{padding-left:3%;}
-  #two#skill.main.style2 .row.gtr-150{width:100%;display:flex;flex-flow:column wrap;align-items:center;}
+  .main.style2 .row.gtr-150{width:100%;display:flex;flex-flow:column wrap;align-items:center;}
   .main.style2 .col-6.col-12-medium:first-child{width:100%;height:100px;text-align:center;padding-left:0;}
   .main.style2 .col-6.col-12-medium:last-child{
     width:100%;
@@ -166,8 +166,9 @@ a{border-bottom:none;}
   .main.style1.special .col-4.col-12-medium:nth-child(2),
   .main.style1.special .col-4.col-12-medium:nth-child(3){margin-top:4em;}
   .main.style1.special .col-4.col-12-medium:nth-child(4){margin-top:3em;}
-  .main.style1.special .col-4.col-12-medium:nth-child(6) .image.fit{width:45%;margin:0 auto;}
-  .main.style1.special .col-4.col-12-medium:nth-child(6) .image.fit img{padding-bottom:1em;}
+  .main.style1.special .col-4.col-12-medium:nth-child(5){}
+  .main.style1.special .col-4.col-12-medium:nth-child(6) .image.fit{width:40%;margin:0 auto;}
+  .main.style1.special .col-4.col-12-medium:nth-child(6) .image.fit img{padding-bottom:.8em;}
   input[type="button"], button, .button {
     border-radius: 8px;
     font-size: 0.9em;
